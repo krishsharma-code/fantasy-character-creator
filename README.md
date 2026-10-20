@@ -5,8 +5,8 @@ A browser-based fantasy character forge built with React, Vite, TypeScript and T
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
-[![GitHub Issues](https://img.shields.io/github/issues/krishsharma-code/fantasy-character-creator)](https://github.com/krishsharma-code/fantasy-character-creator/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/krishsharma-code/fantasy-character-creator)](https://github.com/krishsharma-code/fantasy-character-creator/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/nexus-devs-innovations/fantasy-character-creator)](https://github.com/nexus-devs-innovations/fantasy-character-creator/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/nexus-devs-innovations/fantasy-character-creator)](https://github.com/nexus-devs-innovations/fantasy-character-creator/pulls)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-7-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
@@ -117,7 +117,7 @@ fantasy-character-creator/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/krishsharma-code/fantasy-character-creator.git
+   git clone https://github.com/nexus-devs-innovations/fantasy-character-creator.git
    cd fantasy-character-creator
    ```
 
@@ -160,8 +160,8 @@ The static bundle is written to `dist/` and can be served from any static host.
 
 Contributions are very welcome - bug reports, feature requests and pull requests alike. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for local setup, branch naming conventions and the pull request workflow, and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community expectations.
 
-- Found a bug? [Open a bug report](https://github.com/krishsharma-code/fantasy-character-creator/issues/new?template=bug_report.md).
-- Have an idea? [Open a feature request](https://github.com/krishsharma-code/fantasy-character-creator/issues/new?template=feature_request.md).
+- Found a bug? [Open a bug report](https://github.com/nexus-devs-innovations/fantasy-character-creator/issues/new?template=bug_report.md).
+- Have an idea? [Open a feature request](https://github.com/nexus-devs-innovations/fantasy-character-creator/issues/new?template=feature_request.md).
 
 ## License
 

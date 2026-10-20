@@ -36,7 +36,7 @@ git clone https://github.com/<your-username>/fantasy-character-creator.git
 cd fantasy-character-creator
 
 # 2. Add the upstream remote so you can stay in sync
-git remote add upstream https://github.com/krishsharma-code/fantasy-character-creator.git
+git remote add upstream https://github.com/nexus-devs-innovations/fantasy-character-creator.git
 
 # 3. Install dependencies
 npm install
