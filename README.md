@@ -1,14 +1,14 @@
 # Fantasy Character Creator
 
-A browser-based fantasy character forge built with React 19, Vite and Tailwind CSS. Roll up a complete adventurer - name, class, race, alignment, ability scores, signature abilities, equipment, lore and portrait - then collect the results into a personal deck.
+A browser-based fantasy character forge built with React, Vite, TypeScript and Tailwind CSS. Roll up a complete adventurer - name, class, race, alignment, ability scores, signature abilities, equipment, lore and portrait - then collect the results into a personal deck.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![GitHub Issues](https://img.shields.io/github/issues/krishsharma-code/fantasy-character-creator)](https://github.com/krishsharma-code/fantasy-character-creator/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/krishsharma-code/fantasy-character-creator)](https://github.com/krishsharma-code/fantasy-character-creator/pulls)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-7-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
@@ -60,10 +60,9 @@ There is no backend and no account. Characters are saved to `localStorage`, so y
 | Animation | motion |
 | Audio | Web Audio API (no audio assets) |
 | Persistence | Browser `localStorage` |
-| Linting / checks | `tsc --noEmit` |
-| AI (optional) | `@google/genai` is declared for Google AI Studio's server-side Gemini capability |
+| Type checking | `tsc --noEmit` |
 
-> Note: the shipped app runs entirely client-side. The `@google/genai` dependency exists so the project can be extended with server-side Gemini calls; it is not wired into the client code today. See `.env.example` for the expected environment variables.
+The app has no runtime dependencies beyond the browser - no server, no database, no API keys.
 
 ## Project Structure
 
@@ -95,14 +94,12 @@ fantasy-character-creator/
 │   ├── App.tsx
 │   ├── index.css
 │   └── main.tsx
-├── .env.example
 ├── .gitignore
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
 ├── README.md
 ├── index.html
-├── metadata.json
 ├── package.json
 ├── tsconfig.json
 └── vite.config.ts
@@ -130,21 +127,15 @@ fantasy-character-creator/
    npm install
    ```
 
-3. (Optional) Create your local environment file:
-
-   ```bash
-   cp .env.example .env.local
-   ```
-
-   `GEMINI_API_KEY` and `APP_URL` are only needed if you extend the app with server-side Gemini calls. The core app runs without them.
-
-4. Start the development server:
+3. Start the development server:
 
    ```bash
    npm run dev
    ```
 
    The app is served at `http://localhost:3000`.
+
+No environment variables are required.
 
 ### Production build
 
@@ -153,15 +144,17 @@ npm run build
 npm run preview
 ```
 
+The static bundle is written to `dist/` and can be served from any static host.
+
 ## Available Scripts
 
 | Script | Description |
 | --- | --- |
 | `npm run dev` | Start the Vite dev server on port 3000 |
-| `npm run build` | Type-check-free production bundle into `dist/` |
+| `npm run build` | Build the production bundle into `dist/` |
 | `npm run preview` | Preview the production build locally |
 | `npm run lint` | Type-check the project with `tsc --noEmit` |
-| `npm run clean` | Remove `dist/` and `server.js` |
+| `npm run clean` | Remove the `dist/` build output |
 
 ## Contributing
 

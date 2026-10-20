@@ -41,14 +41,11 @@ git remote add upstream https://github.com/krishsharma-code/fantasy-character-cr
 # 3. Install dependencies
 npm install
 
-# 4. (Optional) Set up local environment variables
-cp .env.example .env.local
-
-# 5. Start the dev server
+# 4. Start the dev server
 npm run dev
 ```
 
-The app runs at `http://localhost:3000`. Most features work without any environment variables - `GEMINI_API_KEY` is only required if your change touches server-side Gemini calls.
+The app runs at `http://localhost:3000`. No environment variables or API keys are required - the app is entirely client-side.
 
 Keep your fork current before starting work:
 

@@ -48,7 +48,7 @@ Closes #
 
 <!-- Which browsers / screen sizes did you check? Any edge cases covered? -->
 
-## Testing Checklist
+## Code Review Checklist
 
 <!-- Tick each item you have completed. Add project-specific checks as needed. -->
 
@@ -59,14 +59,11 @@ Closes #
 - [ ] No new console warnings or errors were introduced
 - [ ] `localStorage`-backed features (deck persistence) still behave correctly
 - [ ] Accessibility: keyboard navigation and `aria-label`s are present for new controls
-
-## Code Quality Checklist
-
 - [ ] My code follows the standards in [CONTRIBUTING.md](../CONTRIBUTING.md)
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented non-obvious logic, particularly around generation rules
 - [ ] I have removed debugging code and unused imports
-- [ ] I have not committed any secrets, keys or `.env` files
+- [ ] I have not committed any secrets or `.env` files
 
 ## Additional Notes
 

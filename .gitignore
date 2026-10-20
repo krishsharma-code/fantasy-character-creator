@@ -6,7 +6,6 @@ node_modules/
 # Build output
 dist/
 build/
-server.js
 
 # Environment
 .env
@@ -14,7 +13,6 @@ server.js
 .env.development.local
 .env.test.local
 .env.production.local
-!.env.example
 
 # Logs
 *.log
